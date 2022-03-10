@@ -21,7 +21,9 @@ const routes: RouteRecordRaw[] = [
 ];
 
 const router: Router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory(
+    import.meta.env.PROD ? '/repo-dashboard/' : undefined,
+  ),
   routes,
 });
 
