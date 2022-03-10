@@ -1,0 +1,59 @@
+{
+  "name": "repo-dashboard",
+  "version": "1.0.0",
+  "description": "Repo Dashboard",
+  "scripts": {
+    "clean": "rimraf dist pnpm-lock.yaml node_modules",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "start": "vite",
+    "start:dev": "vite",
+    "format": "prettier --write .",
+    "lint": "eslint --ext .ts,.vue src"
+  },
+  "author": {
+    "name": "Christopher Quadflieg",
+    "email": "chrissi92@hotmail.de",
+    "url": "https://github.com/Shinigami92"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shinigami92/repo-dashboard.git"
+  },
+  "bugs": "https://github.com/Shinigami92/repo-dashboard/issues",
+  "license": "MIT",
+  "dependencies": {
+    "@quasar/extras": "~1.13.0",
+    "@vueuse/core": "~7.7.1",
+    "vue": "~3.2.31",
+    "vue-router": "~4.0.13"
+  },
+  "devDependencies": {
+    "@prettier/plugin-pug": "~1.19.2",
+    "@quasar/vite-plugin": "~1.0.6",
+    "@types/node": "~16.11.26",
+    "@typescript-eslint/eslint-plugin": "~5.14.0",
+    "@typescript-eslint/parser": "~5.14.0",
+    "@vitejs/plugin-vue": "~2.2.4",
+    "@vue/compiler-sfc": "~3.2.31",
+    "eslint": "~8.10.0",
+    "eslint-config-prettier": "~8.5.0",
+    "eslint-define-config": "~1.2.5",
+    "eslint-gitignore": "~0.1.0",
+    "eslint-plugin-prettier": "~4.0.0",
+    "eslint-plugin-vue": "~8.5.0",
+    "eslint-plugin-vue-pug-sfc": "~1.0.0-alpha.20",
+    "prettier": "2.5.1",
+    "prettier-plugin-organize-imports": "~2.3.4",
+    "pug": "~3.0.2",
+    "quasar": "~2.5.5",
+    "rimraf": "~3.0.2",
+    "sass": "1.32.0",
+    "ts-essentials": "~9.1.2",
+    "typescript": "~4.6.2",
+    "vite": "~2.8.6",
+    "vue-tsc": "~0.32.1"
+  },
+  "packageManager": "pnpm@6.32.3"
+}
