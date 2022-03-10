@@ -28,3 +28,5 @@ app.use(Quasar, {
 app.use(router);
 
 app.mount('#app');
+
+router.push('dashboard');
